@@ -1,0 +1,40 @@
+.cards {
+  margin-top: 51px;
+  max-width: 880px;
+}
+
+.card__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 282px);
+  gap: 17px 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.card__image {
+  width: 282px;
+  height: 282px;
+}
+
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  padding: 25px 20px;
+  align-items: center;
+}
+
+.card__like-button {
+  background: transparent url(../images/Vector.svg) center;
+  width: 21px;
+  height: 18px;
+  border: none;
+}
