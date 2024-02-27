@@ -18,3 +18,7 @@
   position: relative;
   margin: 0 auto;
 }
+
+.content {
+  width: 880px;
+}
