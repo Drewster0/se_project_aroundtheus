@@ -6,8 +6,6 @@
 }
 
 .footer__copyright {
-  width: 318px;
-  height: 18px;
   margin: 0;
   color: #545454;
 }
@@ -15,13 +13,13 @@
 @media screen and (max-width: 880px) {
   .footer {
     max-width: 700px;
-    width: 100%;
   }
 }
 
 @media screen and (max-width: 580px) {
   .footer {
     max-width: 280px;
-    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 36px;
   }
 }
