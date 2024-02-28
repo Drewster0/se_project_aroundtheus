@@ -43,7 +43,8 @@
   width: 150px;
   height: 50px;
   margin-left: auto;
-  border: 2px solid #fff;
+  border-radius: 2px;
+  border: solid #fff;
   padding: 0;
 }
 
