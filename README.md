@@ -4,4 +4,4 @@ This project was made to display different destonations that have been explored 
 
 The techniques used to achieve this responsive design include various percentages given as values rather than hard pixels. Flexboxes and grids were used to group and arrange certain elements within some of the sections to allow for movement as the screen size decreses.
 
-https://github.com/Drewster0/se_project_aroundtheus
+https://drewster0.github.io/se_project_aroundtheus/
