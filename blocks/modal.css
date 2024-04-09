@@ -46,7 +46,7 @@
   padding-left: 36px;
 }
 
-.modal__input-title {
+.modal__input {
   width: 358px;
   height: 27px;
   margin-bottom: 30px;
@@ -59,17 +59,8 @@
   line-height: 17px;
 }
 
-.modal__input-description {
-  width: 358px;
-  height: 27px;
+.modal__input:last-of-type {
   margin-bottom: 48px;
-  padding: 0;
-  color: #000;
-  border: none;
-  border-bottom: 1px solid #000;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
 }
 
 .modal__save-button {
@@ -131,17 +122,14 @@
     padding-left: 22px;
   }
 
-  .modal__input-title {
-    width: 238px;
-  }
-
-  .modal__input-description {
+  .modal__input {
     width: 238px;
   }
 
   .modal__save-button {
     width: 238px;
     height: 46px;
+    font-size: 14px;
   }
 
   .modal__close-button {
