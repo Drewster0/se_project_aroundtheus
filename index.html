@@ -60,8 +60,7 @@
           <span
             class="modal__error modal__input_type_error"
             id="profile-modal-form-title-error"
-            >Error message</span
-          >
+          ></span>
           <input
             type="text"
             name="Description"
@@ -76,7 +75,9 @@
             class="modal__error modal__input_type_error"
             id="profile-modal-form-description-error"
           ></span>
-          <button class="modal__save_button">Save</button>
+          <button class="modal__save_button modal__save_button_disabled">
+            Save
+          </button>
         </form>
       </div>
     </div>
@@ -97,6 +98,10 @@
             maxlength="30"
             required
           />
+          <span
+            class="modal__error modal__input_type_error"
+            id="card-modal-form-title-error"
+          ></span>
           <input
             name="url"
             value=""
@@ -104,9 +109,15 @@
             class="modal__input"
             id="card-modal-form-image"
             required
-            tyoe="url"
+            type="url"
           />
-          <button class="modal__save_button">Save</button>
+          <span
+            class="modal__error modal__input_type_error"
+            id="card-modal-form-image-error"
+          ></span>
+          <button class="modal__save_button modal__save_button_disabled">
+            Save
+          </button>
         </form>
       </div>
     </div>

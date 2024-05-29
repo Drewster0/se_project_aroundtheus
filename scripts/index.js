@@ -62,12 +62,31 @@ const previewImageCloseButton = previewImageModal.querySelector(
 
 //Functions
 
+function closeWithEscape(evt) {
+  if (evt.key === "Escape") {
+    const openPopup = document.querySelector(".modal_opened");
+    if (openPopup) {
+      closeModal(openPopup);
+    }
+  }
+}
+
+function closeModalOverlay(evt) {
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", closeWithEscape);
+  modal.addEventListener("mousedown", closeModalOverlay);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", closeWithEscape);
+  modal.removeEventListener("mousedown", closeModalOverlay);
 }
 
 function getCardElement(cardData) {
