@@ -53,15 +53,30 @@
             value="Name"
             class="modal__input"
             id="profile-modal-form-title"
+            minlength="2"
+            maxlength="40"
+            required
           />
+          <span
+            class="modal__error modal__input_type_error"
+            id="profile-modal-form-title-error"
+            >Error message</span
+          >
           <input
             type="text"
             name="Description"
             value="Description"
             class="modal__input"
             id="profile-modal-form-description"
+            minlength="2"
+            maxlength="200"
+            required
           />
-          <button class="modal__save-button">Save</button>
+          <span
+            class="modal__error modal__input_type_error"
+            id="profile-modal-form-description-error"
+          ></span>
+          <button class="modal__save_button">Save</button>
         </form>
       </div>
     </div>
@@ -78,16 +93,20 @@
             placeholder="Title"
             class="modal__input"
             id="card-modal-form-title"
+            minlength="1"
+            maxlength="30"
+            required
           />
           <input
-            type="text"
             name="url"
             value=""
             placeholder="Image url"
             class="modal__input"
             id="card-modal-form-image"
+            required
+            tyoe="url"
           />
-          <button class="modal__save-button">Save</button>
+          <button class="modal__save_button">Save</button>
         </form>
       </div>
     </div>
@@ -124,5 +143,6 @@
     </template>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>
