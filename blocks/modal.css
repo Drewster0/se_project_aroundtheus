@@ -65,6 +65,10 @@
   margin-bottom: 48px;
 }
 
+.modal__input_type_error {
+  border-bottom: 1px solid rgba(255, 0, 0, 1);
+}
+
 .modal__save_button {
   width: 358px;
   height: 50px;
@@ -86,7 +90,7 @@
   transition: opacity 0.5s linear;
 }
 
-.modal__save_button_disabled {
+.modal__save_button:disabled {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -151,7 +155,6 @@
   left: 36px;
   right: 36px;
   transition: opacity 0.3s;
-  border-bottom: rgba(255, 0, 0, 1);
 }
 
 .modal__error:last-of-type {
@@ -162,11 +165,8 @@
 }
 
 .modal__error_visible {
+  visibility: visible;
   opacity: 1;
-}
-
-.modal__input_type_error {
-  border-bottom: rgba(255, 0, 0, 1);
 }
 
 @media screen and (max-width: 580px) {
