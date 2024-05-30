@@ -65,10 +65,6 @@
   margin-bottom: 48px;
 }
 
-.modal__input_type_error {
-  border-bottom: 1px solid rgba(255, 0, 0, 1);
-}
-
 .modal__save_button {
   width: 358px;
   height: 50px;
@@ -167,6 +163,10 @@
 .modal__error_visible {
   visibility: visible;
   opacity: 1;
+}
+
+.modal__input_type_error {
+  border-bottom: 1px solid rgba(255, 0, 0, 1);
 }
 
 @media screen and (max-width: 580px) {
