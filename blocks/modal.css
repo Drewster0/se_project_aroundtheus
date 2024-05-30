@@ -86,10 +86,15 @@
   transition: opacity 0.5s linear;
 }
 
-.modal__save_button-disabled {
+.modal__save_button_disabled {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal__save_button_disabled:hover {
+  cursor: default;
+  opacity: 1;
 }
 
 .modal__close-button {
