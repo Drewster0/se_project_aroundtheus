@@ -3,7 +3,6 @@ function showInputError(formEl, inputEl, { inputErrorClass, errorClass }) {
   inputEl.classList.add(inputErrorClass);
   errorMessageEl.textContent = inputEl.validationMessage;
   errorMessageEl.classList.add(errorClass);
-  console.log("check");
 }
 
 function hideInputError(formEl, inputEl, { inputErrorClass, errorClass }) {
@@ -11,7 +10,6 @@ function hideInputError(formEl, inputEl, { inputErrorClass, errorClass }) {
   inputEl.classList.remove(inputErrorClass);
   errorMessageEl.textContent = " ";
   errorMessageEl.classList.remove(errorClass);
-  console.log("check");
 }
 
 function checkInputValidity(formEl, inputEl, options) {
@@ -51,7 +49,7 @@ function enableValidation(options) {
   const formEls = [...document.querySelectorAll(options.formSelector)];
   formEls.forEach((formEl) => {
     formEl.addEventListener("submit", (evt) => {
-      e.preventDefault();
+      evt.preventDefault();
     });
 
     setEventListeners(formEl, options);
@@ -72,8 +70,8 @@ function enableValidation(options) {
 const config = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
-  submitButtonSelector: "modal__save_button",
-  inactiveButtonClass: "modal__save_button:disabled",
+  submitButtonSelector: ".modal__save_button",
+  inactiveButtonClass: "modal__save_button-disabled",
   inputErrorClass: "modal__input_type_error",
   errorClass: "modal__error",
 };

@@ -86,7 +86,7 @@
   transition: opacity 0.5s linear;
 }
 
-.modal__save_button:disabled {
+.modal__save_button-disabled {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.2);
